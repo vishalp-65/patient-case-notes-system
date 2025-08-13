@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NHS Patient Case Notes System
+
+A scalable electronic health record module that enables NHS doctors across the UK to create, manage, and retrieve patient case notes. The system supports both manual text entry and automated transcription of scanned handwritten or typed notes using OCR/AI technology.
+
+## Features
+
+- **Manual Case Notes**: Create and manage patient case notes with manual text entry
+- **Scanned Notes**: Upload and transcribe handwritten or typed case notes using AI
+- **Patient Search**: Search and view patient case notes by NHS number
+- **Dashboard**: View recent notes and system notifications
+- **Security**: GDPR compliant and designed for NHS-scale operations
+
+## Technology Stack
+
+- **Frontend**: Next.js 14 with App Router, React 19, TypeScript
+- **Styling**: Tailwind CSS
+- **Code Quality**: ESLint, Prettier
+- **Type Safety**: TypeScript with strict mode
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Run ESLint with auto-fix
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+- `npm run type-check` - Run TypeScript type checking
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable React components
+│   └── ui/             # UI component library
+├── lib/                # Utility functions and configurations
+└── types/              # TypeScript type definitions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development Guidelines
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Follow TypeScript strict mode
+- Use Prettier for code formatting
+- Follow ESLint rules for code quality
+- Use path aliases (@/) for imports
+- Write type-safe code with proper interfaces
 
-## Deploy on Vercel
+## Security & Compliance
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This system is designed to be:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GDPR compliant
+- Secure by design
+- Scalable for NHS operations
+- Accessible and user-friendly
+
+## License
+
+This project is intended for NHS use and follows NHS digital standards.
